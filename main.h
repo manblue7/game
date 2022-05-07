@@ -1,5 +1,4 @@
 #pragma once 
-
 #define GAME_NAME "GAME_ALPHA"
 #define GAME_RES_WIDTH 384
 #define GAME_RES_HEIGHT 216

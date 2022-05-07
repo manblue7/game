@@ -26,7 +26,6 @@ INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
     if(CreateMainGameWindow() != ERROR_SUCCESS) {
         goto Exit;
     }
-
     gDrawingSurface.BitMapInfo.bmiHeader.biSize = sizeof(gDrawingSurface.BitMapInfo.bmiHeader);
     gDrawingSurface.BitMapInfo.bmiHeader.biWidth = GAME_RES_WIDTH;
     gDrawingSurface.BitMapInfo.bmiHeader.biHeight = GAME_RES_HEIGHT;
@@ -40,7 +39,6 @@ INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
         goto Exit;
     } 
 
-
     MSG msg = {0};
     gGameIsRunning = TRUE;
 
@@ -53,17 +51,13 @@ INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
         {
             DispatchMessage(&msg);
         }
-
         ProcessPlayerInput();
         RenderFrameGraphics();
 
         // Will allow another program to run on thread before continuing, but how long the thread runs is unknown
         Sleep(1);
-
     }
-
-
-    
+  
     Exit:
         return 0;
 }
