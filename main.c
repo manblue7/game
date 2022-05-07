@@ -151,25 +151,3 @@ void RenderFrameGraphics(void)
 {
 
 }
-
-// main is used to run a console app
-// int main(int argc, char* argv[]) 
-// {
-//     int z = AddTwoInts(5, 5);
-
-//     printf("Arguments: %i\n", argc);
-//     printf("%i\n", z);
-//     //Outputs to debugger which I currently dont know how to use
-//     OutputDebugStringA("Something something");
-//     return 0;
-// }
-
-// Data Types in C
-// int - integer
-// 0000 0000 0000 0000 0000 0000 0000 0001 = 1
-// 0000 0000 0000 0000 0000 0000 0000 0010 = 2
-// 1111 1111 1111 1111 1111 1111 1111 1111 = 4294967295
-// Signed int has a bit for positive or negative
-// 1111 1111 = -127
-// Char is 8 bits, ascii translation
-//
