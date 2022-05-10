@@ -54,7 +54,7 @@ INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nC
         ProcessPlayerInput();
         RenderFrameGraphics();
 
-        // Will allow another program to run on thread before continuing, but how long the thread runs is unknown
+        // Will allow another program to run on thread before continuing, but how long the program runs is unknown
         Sleep(1);
     }
   
